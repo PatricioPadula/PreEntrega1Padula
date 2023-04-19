@@ -1,0 +1,18 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .carrito{
+        width: 90px;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    
+    .span-numero{
+        color: white;
+        font-size: 2rem;
+        margin-left: 10px;
+    }
+}
+
