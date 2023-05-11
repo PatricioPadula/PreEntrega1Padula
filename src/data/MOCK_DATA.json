@@ -1,0 +1,81 @@
+[{
+    "id": 1,
+    "nombre": "Auriculares Samsung Cable",
+    "precio": 1892,
+    "img": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQuk1xVUEn5IYq14hJoXQObhwFIlEWlefAh1Y4CBEtfbM2QONXfYyaeLrRFS3A-8ryMnJaDPesRjGyy_B364fhq6zJTvFP5diRYjo-Aol9YylX-lmHOdpsM&usqp=CAE",
+    "descripcion": "Auriculares Samsung cable Manos Libres",
+    "stock": 10,
+    "category": "celulares"
+  }, {
+    "id": 2,
+    "nombre": "Disco Solido 480GB Kingston",
+    "precio": 936,
+    "img": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRRuz0Pptrh0y6Fn5LsDKgg30Cxof_t0DMJOKjscTNYjT579XlWdRPUcFeob9PRyFQXprIequggYO4HVrY8t2AgNAmLrIBPhCc5xdNKpizFb3BBjFSbfv1zNw&usqp=CAE",
+    "descripcion": "Disco Solido Kingston Ssd A400 Sata 3 2.5 480gb De Capacidad",
+    "stock": 13,
+    "category": "computacion"
+  }, {
+    "id": 3,
+    "nombre": "Mouse Genius Optico",
+    "precio": 1432,
+    "img": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTOpDMBszt46ihAp_50eu30m_ZKFE5CpC8rezlwWVFqWz5fN981oSjthLJ6HJYeFpeALBREIQTWJa6Y7DyNoWylBX3zHupJJfuXbX_Tx4Jx9CoUvScB10Vf4g&usqp=CAE",
+    "descripcion": "MOUSE GENIUS OPTICO XSCROLL 110 PS2",
+    "stock": 12,
+    "category": "perifericos"
+  }, {
+    "id": 4,
+    "nombre": "Cable HDMI",
+    "precio": 1353,
+    "img": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTLZROPZXyIlC2nQmibRS4FMUKw-2VI2w_un_aF0krPUszfSb781goYuq_EUGml_MbCDo2JJxIr5j-JgFOMfxyFj-A64QJun85U8CH3G9uBL7H1f6D3B64d7g&usqp=CAE",
+    "descripcion": "Cable HDMI a HDMI Longitud: 1.5 metros Full HD transmite hasta 1080p",
+    "stock": 14,
+    "category": "cables"
+  }, {
+    "id": 5,
+    "nombre": "Teclado Gamer Rgb Redragon Kumara",
+    "precio": 670,
+    "img": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQ50iFWqk6sISAf8K4GtqWPbM0fRWrOUFHWCTKQbxnxaf_k_jWNpqtI9_u4xkzBKwez-UXJcatgAhuZj4x5rK0ZN0hRbBa8OJ9TO4_eOJW4Po0b7Qg5bx2pgw&usqp=CAE",
+    "descripcion": "Teclado Mecanico Gamer Rgb Redragon Kumara K552 Switch Red",
+    "stock": 20,
+    "category": "perifericos"
+  }, {
+    "id": 6,
+    "nombre": "Cable Auxiliar",
+    "precio": 784,
+    "img": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcT0ODKwXjN_2aO4kWxo5v88FWLbWxPVzPGCAWi-VAVrVR_Q_b9SZo-Zgeorg0B1hyLwo-hh5QTdgWqwjcGR15DL2TMUp_LLdey6NXoURNztVBL7Vh0fyO92&usqp=CAE",
+    "descripcion": "Cable Auxiliar Miniplug Macho Macho 50cm",
+    "stock": 5,
+    "category": "cables"
+  }, {
+    "id": 7,
+    "nombre": "Parlantes Xinua Gamer",
+    "precio": 1359,
+    "img": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQtNTA82si5ii9JJUhtOBnXHvoeIbkXvqcxTOXir5g_fNXIQ4cb9mhtVrNJtGAmW7qfQJTTujovOtOJhLTeZJh3MKSX7pR_m20DeZl1_ZPRFtlzKws98DNO_A&usqp=CAE",
+    "descripcion": "Parlante Xinua Gamer Computadora Consolas Luz Rgb Usb Aux",
+    "stock": 18,
+    "category": "perifericos"
+  }, {
+    "id": 8,
+    "nombre": "Cable VGA a VGA",
+    "precio": 1080,
+    "img": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSyp7rqqb9fcK0szXs3aF-R7mrQ4wUsn3TpcAahsrmRGIlNWkbDT1rZgvggo69zaJ3cE-LqtzObCcCbbg9tQAZ3bJqPnNzRt_jxV-ew-XESVDTU7iewQis1Dw&usqp=CAE",
+    "descripcion": "Cable vga a vga 1.5mt",
+    "stock": 17,
+    "category": "cables"
+  }, {
+    "id": 9,
+    "nombre": "Pendrive SanDisk 64gb Cruzer Blade",
+    "precio": 1881,
+    "img": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTjuSEwQBnd27D4gzLVCR82p07wYNJx035joAq5sjmKylDpWMjupFWGg1yGGXijBjMNSnYkv-kX2rUYaqR947tr8IU37ZnRwux7vETrDpgcA6xBwwTNL5aDeDA&usqp=CAE",
+    "descripcion": "Pendrive SanDisk Cruzer Blade 64GB 2.0 negro y rojo",
+    "stock": 26,
+    "category": "computacion"
+  }, {
+    "id": 10,
+    "nombre": "Cargador Samsung Tipo C",
+    "precio": 1419,
+    "img": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQZ6t9PUx-kkmmkh9g1CAF-akXWDS2B6-TqaQXrS1eNN6yhAVlXwdWNlHY8UCnX_r84ZK2Ake3jAd9DGKqbZIlhEHOivGyVHLwkDNAkDJIEW6DckapBTMeSMw&usqp=CAE",
+    "descripcion": "Cargador Original Samsung Carga Rapida Tipo C",
+    "stock": 14,
+    "category": "celulares"
+  }]
