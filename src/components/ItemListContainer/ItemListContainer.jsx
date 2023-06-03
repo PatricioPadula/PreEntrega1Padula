@@ -13,17 +13,27 @@ export const ItemListContainer = () =>{
     const { categoryId } = useParams()
 
     useEffect(() => {
-
-        // 1.- Armar una referencia (sync)
+        
         const productosRef = collection(db, "productos")
-        // 2.- Consumir esa referencia (async)
-        getDocs(productosRef)
+        const q = categoryId
+                    ? query(productosRef, where("category", "==", categoryId))
+                    : productosRef
+
+        //aquí me trabe debido a que el console.log(res.docs) me devolvia un array vacio no entiendo el porque. 
+
+        getDocs(q)
             .then((res) => {
-                console.log(res.docs);
-                /* const docs = res.docs.map((doc) => doc.id) */
-                /* setProductos(docs) */
+                /* console.log(res.docs); */
+                const docs = res.docs.map((doc) => {
+                    return{
+                        ...doc.data(),
+                        id: doc.id
+                    }
+                })
+                console.log(docs);
+                setProductos(docs)
             })
-            /* .catch(e=> console.log(e)) */
+            .catch(e=> console.log(e))
 
     }, [categoryId])
 
