@@ -1,29 +1,30 @@
 import { useEffect } from 'react'
 import { useState } from 'react'
-import { pedirDatos } from '../../helpers/pedirDatos'
 import './ItemListContainer.scss'
 import ItemList from '../ItemList/ItemList'
 import { useParams } from 'react-router-dom'
+import { collection, getDocs } from 'firebase/firestore'
+import { db } from '../../firebase/config'
 
 export const ItemListContainer = () =>{
 
     const [productos, setProductos] = useState([])
 
     const { categoryId } = useParams()
-    console.log(categoryId);
 
     useEffect(() => {
 
-        pedirDatos()
-            .then((data) => {
-                if(!categoryId) {
-                    setProductos(data)
-                }else {
-                    setProductos(data.filter((el) => el.category === categoryId))
-                }
+        // 1.- Armar una referencia (sync)
+        const productosRef = collection(db, "productos")
+        // 2.- Consumir esa referencia (async)
+        getDocs(productosRef)
+            .then((res) => {
+                console.log(res.docs);
+                /* const docs = res.docs.map((doc) => doc.id) */
+                /* setProductos(docs) */
             })
-            .catch((err) => console.log(err))
-        
+            /* .catch(e=> console.log(e)) */
+
     }, [categoryId])
 
 
