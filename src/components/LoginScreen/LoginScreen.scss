@@ -1,0 +1,35 @@
+.login{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://media.revistagq.com/photos/6273edebab8c0fea708155d0/16:9/w_2560%2Cc_limit/GettyImages-1314656208.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    .login-container{
+        width: 600px;
+        background-color: rgb(255, 255, 255);
+        padding: 30px;
+        border-radius: 10px;
+        opacity: .95;
+        .botones{
+            display: flex;
+            justify-content: space-between;
+            .boton{
+                background-color: rgb(0, 99, 192);
+                border: none;
+                &:hover{
+                    background-color: rgb(0, 169, 231);
+                }
+                .google{
+                    width: 20px;
+                    margin-right: 9px;
+                }
+            }
+        }
+    }
+}
+
