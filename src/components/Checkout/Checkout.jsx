@@ -1,12 +1,12 @@
 import { useContext, useState } from "react";
 import { CartContext } from "../../context/CartContext";
-import { Navigate } from "react-router-dom";
-import { collection, addDoc } from "firebase/firestore"
+import { Link, Navigate } from "react-router-dom";
+import { collection, addDoc, doc, updateDoc, getDoc } from "firebase/firestore"
 import { db } from "../../firebase/config";
 
 
 const Checkout = () => {
-    const { cart, totalCantidad } = useContext(CartContext)
+    const { cart, totalCantidad, emptyCart } = useContext(CartContext)
 
     const [values, setValues] = useState({
         nombre: '',
@@ -49,13 +49,42 @@ const Checkout = () => {
             fyh: new Date()
         }
 
+        orden.items.forEach((item) => {
+            const itemRef = doc(db, "productos", item.id)
+
+            getDoc(itemRef)
+                .then((doc) => {
+                    if(doc.data().stock >= item.cantidad){
+                        updateDoc(itemRef,{
+                            stock: doc.data().stock - item.cantidad,
+                        })
+                    }else{
+                        alert("No hay stock de " + item.nombre)
+                    }
+
+                })
+        });
+
         const ordersRef = collection(db,"orders")
 
         addDoc(ordersRef, orden)
             .then((doc) => {
                 setOrderId(doc.id)
+                emptyCart()
             })
 
+    }
+
+    if (orderId){
+        return(
+            <div className="text-center my-5">
+                <h2>Tu compra se registo exitosamente!</h2>
+                <hr />
+                <p>Guarda tu número de orden: {orderId}</p>
+
+                <Link to="/" >Volver</Link>
+            </div>
+        )
     }
 
     if(cart.length === 0){
